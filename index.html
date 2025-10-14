@@ -3,87 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Resume Maker - Privacy Policy</title>
+    <title>CV Preparation: Resume Builder - Privacy Policy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom Colors for Navy and Gold */
+        :root {
+            --color-navy: #051930; 
+            --color-gold: #E7C175;
+        }
+        /* Applying Inter font and default background/text color */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        strong {
-            color: #000;
-        }
-        p, ul, ol {
-            margin-bottom: 1em;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray body background */
         }
     </style>
-</head>
-<body>
-
-    <h1>Privacy Policy for CV Resume Maker</h1>
-    <p>This Privacy Policy governs the manner in which the <strong>CV Resume Maker</strong> mobile application ("App") collects, uses, maintains, and discloses information collected from users (each, a "User") of the App. This privacy policy applies to the App and all products and services offered by Faisal ur Rehman.</p>
-
-    <h2>1. Personal Data</h2>
-    <p><strong>CV Resume Maker does not collect any personal data from its users.</strong> All information that users input into the App, such as names, contact details, work experience, education, skills, and other resume-related content, is stored exclusively on the user's device and is not transmitted to or stored on any server controlled by Faisal ur Rehman.</p>
-    <p>The App does not require users to register an account or provide any personal information to use its core features. Your resume data is yours and remains private to your device.</p>
-
-    <h2>2. Non-Personal Data and Third-Party Services</h2>
-    <p>While the App itself does not collect personal data, it does utilize third-party services that may collect anonymized, non-personal data for purposes such as analytics, crash reporting, and advertising. These third-party services operate under their own privacy policies.</p>
-
-    <h3>2.1. Google AdMob</h3>
-    <p>The App uses Google AdMob, an advertising service provided by Google Ireland Limited. AdMob may use cookies and other tracking technologies to collect data for personalized advertising. This data is typically non-personal and includes information such as device identifiers, IP addresses, and usage data. This is done to provide relevant advertisements.</p>
-    <p>For more information on how AdMob collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-    <p>You can learn more about how Google uses information from apps or sites that use their services here: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">https://policies.google.com/technologies/partner-sites</a></p>
-
-    <h3>2.2. Google Firebase (Analytics & Crashlytics)</h3>
-    <p>The App uses Google Firebase, a development platform provided by Google. Specifically, Firebase is used for:</p>
-    <ul>
-        <li><strong>Firebase Analytics:</strong> To understand how users engage with the App, such as app usage patterns, session duration, and feature engagement. This data is anonymized and helps improve the App's performance and user experience.</li>
-        <li><strong>Firebase Crashlytics:</strong> To collect crash reports, which helps in identifying and fixing bugs and improving the App's stability. Crash reports contain technical information about the crash but do not include personal user data.</li>
-    </ul>
-    <p>For more information on how Firebase collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-
-    <h2>3. Data Storage and Security (User-Generated Content)</h2>
-    <p>As stated in Section 1, all resume content and personal details you enter into the CV Resume Maker app are stored locally on your device. Faisal ur Rehman does not have access to this data. The security of your data depends on the security of your device and any backup solutions you use (e.g., iCloud backups).</p>
-    <p>When you choose to export or share your resume (e.g., as a PDF), the App utilizes standard iOS sharing functionalities. Any data shared or exported through these channels will be subject to the privacy policies of the respective third-party services (e.g., email providers, cloud storage services like iCloud, Google Drive, Dropbox if the user chooses to save there).</p>
-
-    <h2>4. Children's Privacy</h2>
-    <p>The CV Resume Maker App is not intended for use by children under the age of 13. We encourage parents and guardians to monitor their children's internet usage and to instruct their children never to give out personal information without their permission.</p>
-
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>Faisal ur Rehman reserves the right to update this privacy policy at any time. When we do, we will revise the "last updated" date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the non-personal information we collect via third-party services. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
-
-    <h2>6. Your Acceptance of These Terms</h2>
-    <p>By using the CV Resume Maker App, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our App. Your continued use of the App following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
-
-    <h2>7. Contacting Me</h2>
-    <p>If you have any questions about this Privacy Policy, the practices of this App, or your dealings with this App, please contact me at:</p>
-    <p><strong>Faisal ur Rehman</strong><br>
-    Email: <strong><a href="mailto:[Faisaldeveloper493@icloud.com]">[Faisaldeveloper493@icloud.com]</a></strong></p>
-
-    <p><em>This Privacy Policy was last updated on <strong id="lastUpdatedDate">---</strong>.</em></p>
-
     <script>
-        document.getElementById('lastUpdatedDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'app-navy': 'var(--color-navy)',
+                        'app-gold': 'var(--color-gold)',
+                    },
+                }
+            }
+        }
     </script>
+</head>
+<body class="p-4 md:p-8">
+    <!-- Main Content Container with Navy Background -->
+    <div class="max-w-4xl mx-auto p-6 md:p-10 rounded-xl shadow-2xl bg-app-navy text-gray-100">
 
+        <h1 class="text-3xl md:text-4xl font-extrabold text-app-gold mb-6 border-b border-app-gold pb-3">
+            Privacy Policy for CV Preparation: Resume Builder
+        </h1>
+        
+        <p class="mb-6 text-sm">This Privacy Policy governs the manner in which the <strong>CV Preparation: Resume Builder</strong> mobile application ("App") collects, uses, maintains, and discloses information collected from users (each, a "User") of the App. This privacy policy applies to the App and all products and services offered by Faisal ur Rehman.</p>
+
+        <!-- Section 1: Personal Data -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">1. Personal Data and Local Storage</h2>
+        <p><strong>CV Preparation: Resume Builder does not collect any personal data from its users.</strong> All information that users input into the App, such as names, contact details, work experience, education, skills, and other resume-related content, is **stored exclusively on the user's device** and is not transmitted to or stored on any server controlled by Faisal ur Rehman.</p>
+        <p>The App does not require users to register an account or provide any personal information to use its core features. Your resume data is yours and remains private to your device.</p>
+
+        <!-- Section 2: Non-Personal Data and Third-Party Services -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">2. Third-Party Services and Data Processing</h2>
+        <p>While the App itself does not collect personal data, it does utilize third-party services that may collect anonymized, non-personal data for purposes such as analytics, crash reporting, and the operation of AI features and advertising. These third-party services operate under their own privacy policies.</p>
+
+        <!-- 2.1 Gemini API (NEW) -->
+        <h3 class="text-xl font-semibold text-app-gold mt-6 mb-3">2.1. AI Services (Google Gemini API)</h3>
+        <p>The App uses the **Google Gemini API** to power intelligent features, including generating career objectives, skill summaries, and personalized interview questions based on your CV content.</p>
+        <p>When you use the 'Generate with AI' feature, the relevant, user-provided text content (e.g., job title, project descriptions) from your locally stored CV is **temporarily transmitted** to the Gemini API for processing. The generated AI response is then returned to your device.</p>
+        <p class="text-sm border border-app-gold p-3 rounded-lg mt-3">
+            <strong>Data Handling:</strong> We only transmit the minimum necessary text content required to generate the AI response. We **do not store** this transmitted content on any server controlled by us, and we adhere strictly to the Gemini API usage policies regarding user privacy.
+        </p>
+        
+        <!-- 2.2 Google AdMob (renumbered) -->
+        <h3 class="text-xl font-semibold text-app-gold mt-6 mb-3">2.2. Google AdMob</h3>
+        <p>The App uses Google AdMob, an advertising service provided by Google Ireland Limited. AdMob may use cookies and other tracking technologies to collect data for personalized advertising. This data is typically non-personal and includes information such as device identifiers, IP addresses, and usage data. This is done to provide relevant advertisements.</p>
+        <p>For more information on how AdMob collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-app-gold hover:underline">https://policies.google.com/privacy</a></p>
+
+        <!-- 2.3 Firebase (renumbered) -->
+        <h3 class="text-xl font-semibold text-app-gold mt-6 mb-3">2.3. Google Firebase (Analytics & Crashlytics)</h3>
+        <p>The App uses Google Firebase, a development platform provided by Google. Specifically, Firebase is used for:</p>
+        <ul class="list-disc ml-6 space-y-2">
+            <li><strong>Firebase Analytics:</strong> To understand how users engage with the App, such as app usage patterns, session duration, and feature engagement. This data is anonymized and helps improve the App's performance and user experience.</li>
+            <li><strong>Firebase Crashlytics:</strong> To collect crash reports, which helps in identifying and fixing bugs and improving the App's stability. Crash reports contain technical information about the crash but do not include personal user data.</li>
+        </ul>
+        <p>For more information on how Firebase collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-app-gold hover:underline">https://policies.google.com/privacy</a></p>
+
+        <!-- Section 3: Data Security and Sharing -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">3. Data Security and Sharing</h2>
+        <p>As stated in Section 1, all resume content and personal details you enter into the **CV Preparation: Resume Builder** app are stored locally on your device. Faisal ur Rehman does not have access to this data. The security of your data depends on the security of your device and any backup solutions you use (e.g., iCloud backups).</p>
+        <p>When you choose to export or share your resume (e.g., as a PDF), the App utilizes standard device sharing functionalities. Any data shared or exported through these channels will be subject to the privacy policies of the respective third-party services (e.g., email providers, cloud storage services).</p>
+
+        <!-- Section 4: Children's Privacy -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">4. Children's Privacy</h2>
+        <p>The **CV Preparation: Resume Builder** App is not intended for use by children under the age of 13. We encourage parents and guardians to monitor their children's internet usage and to instruct their children never to give out personal information without their permission.</p>
+
+        <!-- Section 5: Changes to This Privacy Policy -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">5. Changes to This Privacy Policy</h2>
+        <p>Faisal ur Rehman reserves the right to update this privacy policy at any time. When we do, we will revise the "last updated" date at the bottom of this page. We encourage Users to frequently check this page for any changes. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+
+        <!-- Section 6: Your Acceptance -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">6. Your Acceptance of These Terms</h2>
+        <p>By using the **CV Preparation: Resume Builder** App, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our App. Your continued use of the App following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
+
+        <!-- Section 7: Contacting Me -->
+        <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">7. Contacting Me</h2>
+        <p>If you have any questions about this Privacy Policy, the practices of this App, or your dealings with this App, please contact me at:</p>
+        <p class="mt-2">
+            <strong class="text-white">Faisal ur Rehman</strong><br>
+            Email: <a href="mailto:Faisaldeveloper493@icloud.com" class="text-app-gold hover:underline">Faisaldeveloper493@icloud.com</a>
+        </p>
+
+        <p class="mt-8 text-sm text-gray-400">
+            <em>This Privacy Policy was last updated on <strong id="lastUpdatedDate" class="text-app-gold">---</strong>.</em>
+        </p>
+    </div>
+
+    <!-- Script to dynamically update the date -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('lastUpdatedDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        });
+    </script>
 </body>
 </html>
