@@ -26,7 +26,7 @@
                         'app-navy': 'var(--color-navy)',
                         'app-gold': 'var(--color-gold)',
                     },
-                }
+                },
             }
         }
     </script>
@@ -63,7 +63,7 @@
         <p>The App uses Google AdMob, an advertising service provided by Google Ireland Limited. AdMob may use cookies and other tracking technologies to collect data for personalized advertising. This data is typically non-personal and includes information such as device identifiers, IP addresses, and usage data. This is done to provide relevant advertisements.</p>
         <p>For more information on how AdMob collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-app-gold hover:underline">https://policies.google.com/privacy</a></p>
 
-        <!-- 2.3 Firebase (renumbered) -->
+        <!-- 2.3 Google Firebase (Analytics & Crashlytics) -->
         <h3 class="text-xl font-semibold text-app-gold mt-6 mb-3">2.3. Google Firebase (Analytics & Crashlytics)</h3>
         <p>The App uses Google Firebase, a development platform provided by Google. Specifically, Firebase is used for:</p>
         <ul class="list-disc ml-6 space-y-2">
@@ -71,6 +71,13 @@
             <li><strong>Firebase Crashlytics:</strong> To collect crash reports, which helps in identifying and fixing bugs and improving the App's stability. Crash reports contain technical information about the crash but do not include personal user data.</li>
         </ul>
         <p>For more information on how Firebase collects and processes data, please refer to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" class="text-app-gold hover:underline">https://policies.google.com/privacy</a></p>
+        
+        <!-- 💡 NEW SECTION FOR PAID USERS / IN-APP PURCHASES -->
+        <h3 class="text-xl font-semibold text-app-gold mt-6 mb-3">2.4. In-App Purchases and Financial Data (Apple)</h3>
+        <p>If you choose to purchase an auto-renewing subscription or any other product within the App, the transaction will be processed by Apple through the **Apple App Store**. We **do not collect or store your financial information**, such as credit card numbers or banking details.</p>
+        <p>We receive non-personal transaction confirmation data from Apple, such as the purchase date, the subscription status (active/inactive), and a unique transaction identifier, which we use solely for **verifying your access to premium features** and managing the subscription within the App. All payment details are managed securely by Apple, and their processing is governed by the Apple Media Services Terms and Conditions and their Privacy Policy.</p>
+        <!-- 💡 END NEW SECTION -->
+
 
         <!-- Section 3: Data Security and Sharing -->
         <h2 class="text-2xl font-bold text-app-gold mt-8 mb-4">3. Data Security and Sharing</h2>
@@ -98,14 +105,18 @@
         </p>
 
         <p class="mt-8 text-sm text-gray-400">
-            <em>This Privacy Policy was last updated on <strong id="lastUpdatedDate" class="text-app-gold">---</strong>.</em>
+            <em>This Privacy Policy was last updated on <strong id="lastUpdatedDate" class="text-app-gold">October 19, 2025</strong>.</em>
         </p>
     </div>
 
-    <!-- Script to dynamically update the date -->
+    <!-- Script to dynamically update the date (optional, but good practice) -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('lastUpdatedDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            // Updated the default text to the current date, but keeping the script for robustness
+            const dateElement = document.getElementById('lastUpdatedDate');
+            if (dateElement.textContent === '---') {
+                dateElement.textContent = 'October 19, 2025';
+            }
         });
     </script>
 </body>
